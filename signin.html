@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=3.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <form action="signinsuccessful.html" method="get">
+        <tr>
+          <td>
+            <label for="F-name">Firstname&#9997;:</label>
+            <input
+              type="text"
+              id="F-name"
+              name="Firstname"
+              pattern="[a-zA-Z]{3,}"
+              required
+            />
+            &nbsp;
+            <label for="L-name">Lastname(surname):</label>
+            <input
+              type="text"
+              id="L-name"
+              name="Lastname"
+              pattern="[a-zA-Z]{3,}"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><br /></td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="Emailaddress">Email&#128231;id&nbsp;&nbsp;:</label>
+            <input
+              type="text"
+              id="Emailaddress"
+              name="Email_id"
+              placeholder="abcd12@gmail.com"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><br /></td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="pswd">Password&#128273;:</label>
+            <input
+              type="password"
+              id="pswd"
+              name="password"
+              required
+              pattern="[a-zA-Z0-9]{6,10}"
+              title="The password should contian at least one upper case, numeric,lowercase with a lenght of 6 to 8 "
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><br /></td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="phonenumber">phonenumber&#128222;</label>
+            <input type="tel" id="phonenumber" required />
+          </td>
+        </tr>
+        <tr>
+          <td><br /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="dateofbirth">DOB&#128198;:</label>
+            <input type="date" id="dateofbirth" required />
+          </td>
+        </tr>
+        <tr>
+          <td><br /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="gender">Select your gender</label>
+            <select name="" id="gender" required>
+                <option value="Female" selected>Female&#128103;</option>
+              <option value="Male" >Male&#128102;</option>
+           
+            </select>
+          </td>
+        </tr>
+       
+          <td><br /></td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="Pincode">Enter your CGPA:</label>
+            <input
+              type="number"
+              pattern="[0-9]{2}"
+              step="0.1"
+              min="5.1"
+              max="10"
+              title="your pincode must be in 6 digits"
+              placeholder="eg:5.6"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>select your religion:</p>
+            <input id="Hindu" type="radio" value="Hindu" name="religion" />
+            <label for="Hindu">Hindu&#128329;</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input id="Muslim" type="radio" value="Muslim" name="religion" />
+            <label for="Muslim">Muslim&#9770;</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input id="Christian" type="radio" value="Christian" name="religion" />
+            <label for="Christian">Christian&#10015;</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="qualication">Your highest qualication :</label>
+            <input list="education" id="qualication" size="15" required />
+
+            <datalist id="education">
+              <option value="postgraduation"></option>
+              <option value="undergraduation"></option>
+              <option value="Intermediate"></option>
+              <option value="10th"></option>
+            </datalist>
+          </td>
+        </tr>
+     
+        <td><br /></td>
+      </tr>
+        <tr>
+          <td>
+            <label for="photo">Upload your photo & educationcertificates&#128221;</label>
+            <input type="file" required accept="image/*" multiple />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Do you have any work experience?</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="workexperience">
+              <input
+                type="radio"
+                value="Yes"
+                name="workexperience"
+                id="workexperience"
+              />&#9989;
+            </label>
+            <label for="workexperience1">
+              <input
+                type="radio"
+                value="No"
+                name="workexperience"
+                id="workexperience1"
+              />&#10060;
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <fieldset>
+              <legend>Declaration&#128064;</legend>
+              <span><input type="checkbox" required/></span>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Suscipit et, voluptates illo eaque eos, laudantium veritatis
+                earum aliquam eveniet quasi, accusamus quaerat fuga commodi iure
+                aut unde debitis nihil dolor nulla itaque! Aperiam dicta,
+                tempora eligendi dolorum voluptates laboriosam consectetur nihil
+                dolores nisi cumque!
+              </p>
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="reset" value="reset&#10227;" /> &nbsp; &nbsp;
+            <input type="submit" value="submit&#9989;" />
+          </td>
+        </tr>
+       
+      </form>
+    </table>
+  </body>
+</html>
